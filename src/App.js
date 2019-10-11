@@ -47,9 +47,9 @@ class App extends Component {
     let defaultHogs = this.state.hogs
     if (this.state.display) {
       defaultHogs = this.state.hogs.sort((a,b) => 
-       this.state.display === "AZ" ? 
-       a.name.localeCompare(b.name) :
-       a.weight - b.weight
+       this.state.display === "AZ" 
+       ? a.name.localeCompare(b.name) 
+       : a.weight - b.weight
       );
     }
     return this.state.greased
